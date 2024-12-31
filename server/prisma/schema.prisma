@@ -55,3 +55,10 @@ model Expenses {
   amount    Float
   timestamp DateTime
 }
+
+model SalesSummary {
+  salesSummaryId   String   @id
+  totalValue       Float
+  changePercentage Float?
+  date             DateTime
+}
