@@ -48,3 +48,10 @@ model Purchases {
   totalCost  Float
   product    Products @relation(fields: [productId], references: [productId])
 }
+
+model Expenses {
+  expenseId String   @id
+  category  String
+  amount    Float
+  timestamp DateTime
+}
