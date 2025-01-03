@@ -42,7 +42,7 @@ model Sales {
 model Purchases {
   purchaseId String   @id
   productId  String
-  timeStamp  DateTime
+  timestamp  DateTime
   quantity   Int
   unitCost   Float
   totalCost  Float
@@ -74,7 +74,7 @@ model ExpenseSummary {
   expenseSummaryId  String              @id
   totalExpenses     Float
   date              DateTime
-  expenseByCategory ExpenseByCategory[]
+  ExpenseByCategory ExpenseByCategory[]
 }
 
 model ExpenseByCategory {
